@@ -27,28 +27,6 @@ const SearchPage = () => {
     navigate("/caption-editor", { state: { image } });
   };
 
-  // return (
-  //   <div className="search-page">
-  //     <form onSubmit={handleSearch}>
-  //       <input
-  //         type="text"
-  //         placeholder="Enter your search term"
-  //         value={query}
-  //         onChange={(e) => setQuery(e.target.value)}
-  //       />
-  //       <button type="submit">Search</button>
-  //     </form>
-  //     <div className="image-grid">
-  //       {images.map((image) => (
-  //         <div key={image.id} className="image-item">
-  //           <img src={image.urls.small} alt={image.alt_description} />
-  //           <button onClick={() => handleAddCaption(image)}>Add Caption</button>
-  //         </div>
-  //       ))}
-  //     </div>
-  //   </div>
-  // );
-
   return (
     <div className="p-6 space-y-6">
       <header className="text-left">
